@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI Portfolio</title>
+    <!-- Add this in the <head> section -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="hero-section">
+    <header>
+      <div class="logo">UI Portfolio</div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="material-icons">menu</span>
+      </div>
+
+      <div class="nav-and-icons">
+        <nav id="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Services</a>
+        
+          <div class="dropdown">
+            <button class="dropbtn">Blog ▾</button>
+            <div class="dropdown-content">
+              <a href="blog.html#blog">Latest Posts</a>
+              <a href="blog-tips.html#blog-tips">Tips</a>
+              <a href="blog-news.html#blog-news">News</a>
+
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropbtn">Pages ▾</button>
+            <div class="dropdown-content">
+              <a href="portfolio.html#portfolio">Portfolio</a>
+              <a href="testimonial.html#testimonial">Testimonials</a>
+              <a href="faq.html#faq">FAQ</a>
+
+            </div>
+          </div>
+        
+          <a href="#contact-form">Contact</a>
+        </nav>
+        
+        <div class="header-icons">
+          <a href="#success-work">
+            <button class="btn green">Hire Me</button>
+          </a>
+          
+          <span class="material-icons" id="search-toggle">search</span>
+          <span class="material-icons" id="dark-mode-toggle">dark_mode</span>
+        </div>
+        
+        <!-- Search Bar -->
+        <div class="search-container" id="search-bar">
+          <input type="text" id="search-input" placeholder="Type to search..." />
+          <button id="search-submit">Search</button>
+        </div>
+        
+    </header>
+
+    <main class="main-content">
+      <p class="intro">Hi, I am <span class="name">John Watson</span></p>
+      <h2 class="animated-text" id="animatedText"></h2>
+      <p class="description">
+        I love Graphic design and Photography and have been working on my portfolio since 2016.  
+        I can give your business a new creative start right away!
+      </p>
+      <div class="buttons">
+        <button class="btn green">Hire Me</button>
+        <button class="btn grey">My Portfolio</button>
+      </div>
+    </main>
+
+   <!-- Sidebar -->
+<aside class="sidebar">
+  <div class="card" id="next-btn">
+    <span class="material-icons">double_arrow</span>
+    <p>Next</p>
+  </div>
+  <div class="card" id="back-btn">
+    <span class="material-icons">arrow_back</span>
+    <p>Back</p>
+  </div>
+  <div class="card" id="download-btn">
+    <span class="material-icons">download</span>
+    <p>Download</p>
+  </div>
+  <div class="card" id="buy-btn">
+    <span class="material-icons">shopping_cart</span>
+    <p>Buy</p>
+  </div>
+</aside>
+
+
+  </div>
+  <!-- ABOUT Section -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="images/image2.jpg" alt="John Watson" /> <!-- Optional: Add your profile image -->
+  </div>
+
+  <div class="about-main-bio">
+    <h6>MY BIOGRAPHY</h6>
+    <h3>A Lead UI Designer & Web Developer based in UK</h3>
+    <p class="description">
+      I love Graphic design and Photography and have been
+       working on my portfolio since 2016. I Can give your 
+       business a new Creative start right away! Contact me
+        and we will discuss your projects!
+    </p>
+    <div class="about-infos">
+      <div class="left-side">
+        <div class="info-item">
+          <span>Name:</span><span>John Watson</span>
+        </div>
+        <div class="info-item">
+          <span>Email:</span><span>JohnWatson@yahoo.com</span>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="info-item">
+          <span>From:</span><span>London, UK</span>
+        </div>
+        <div class="info-item">
+          <span>Phone:</span><span>+21 234 567 8901</span>
+        </div>
+      </div>
+    </div>
+    
+
+  
+    <div class="about-socials">
+      <label>Follow me:</label>
+      <div class="about-social-links">
+        <a href="https://behance.net/yourprofile" target="_blank" rel="noopener">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="about-buttons">
+      <button class="btn green">Hire Me</button>
+      <a href="assets/files/DANTEZRES.pdf"  class="btn grey" download>Download CV</a>
+    </div>        
+  </div>
+</section>
+<!-- End ABOUT Section -->
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="skills-title">
+    <h2><strong>What I Do for You</strong></h2>
+  </div>
+
+  <div class="skills-card-list">
+    <div class="skill-card">
+      <i class="fas fa-laptop skill-icon"></i>
+      <h3>Web Development</h3>
+      <p class="skill-card-description">Crafting responsive and dynamic websites tailored for all devices.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-circle-notch skill-icon"></i>
+      <h3>App Development</h3>
+      <p class="skill-card-description">Developing user-friendly apps with modern UI and cross-platform support.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-camera skill-icon"></i>
+      <h3>Photography</h3>
+      <p class="skill-card-description">Capturing professional-quality images for your personal or business needs.</p>
+    </div>
+  </div>
+  <div class="more-services">
+    <a href="services.html#service">
+      More Services <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>  
+  
+</section>
+
+      <!--BLOG-->
+      <div class="blog-container">
+        <!-- Left: Image -->
+        <div class="blog-left">
+          <img 
+            src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+            alt="Skills Illustration" 
+            class="blog-image"
+          />
+        </div>
+      
+        <!-- Right: Text and Bars -->
+        <section class="skills-section" id="skills">
+          <div class="blog-right">
+            <div class="blog-title">
+              <small class="section-subtitle">My Skills</small>
+              <h2 class="section-title">My Featured Skills</h2>
+              <p class="section-description">
+                I specialize in a range of skills including design and development. Below is an overview of some key skills I’ve mastered over time.
+              </p>
+            </div>
+        
+            <!-- Skill Bars -->
+            <div class="skill-bar">
+              <label>UI/UX Design</label>
+              <div class="bar">
+                <div class="progress" id="uiux-progress" style="width: 90%;"></div>
+              </div>
+              <span class="percentage" id="uiux-percentage">90%</span>
+            </div>
+        
+            <div class="skill-bar">
+              <label>Web Development</label>
+              <div class="bar">
+                <div class="progress" id="webdev-progress" style="width: 85%;"></div>
+              </div>
+              <span class="percentage" id="webdev-percentage">85%</span>
+            </div>
+        
+            <div class="skill-bar">
+              <label>App Development</label>
+              <div class="bar">
+                <div class="progress" id="appdev-progress" style="width: 80%;"></div>
+              </div>
+              <span class="percentage" id="appdev-percentage">80%</span>
+            </div>
+          </div>
+        </section>
+        
+  <!--PAGES-->
+  <section class="services-section" id="services">
+    <div class="card">
+      <div class="services-container">
+        <div class="services-left">
+          <div class="service-group">
+            <div class="service-item">
+              <i class="fab fa-wordpress" style="color: green;"></i>
+              <div>
+                <h4>Web Development</h4>
+                <p>Building responsive, scalable, and modern websites powered by WordPress and custom code.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-globe"></i>
+              <div>
+                <h4>Design Trends</h4>
+                <p>Staying ahead with the latest UI/UX patterns, color schemes, and typography ideas.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="service-group">
+            <div class="service-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h4>Research & Analysis</h4>
+                <p>In-depth competitive research and market analysis to improve product direction.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-headset"></i>
+              <div>
+                <h4>Customer Support</h4>
+                <p>Providing timely, friendly, and helpful support to clients and users.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="service-group">
+            <div class="service-item">
+              <i class="fas fa-mobile-alt"></i>
+              <div>
+                <h4>Responsive Design</h4>
+                <p>Ensuring optimal experience across all screen sizes and devices.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-file-image"></i>
+              <div>
+                <h4>PSD Design</h4>
+                <p>Creating clean and structured PSD files for seamless design-to-code workflow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="services-right">
+          <img src="images/image2.jpg" alt="Services Visual" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+            <!--PAGES ACHIEVEMENTS-->
+            <div class="stats-card">
+              <div class="stat-item">
+                <label>Finished Projects</label>
+                <span class="countup" data-target="135">0</span>
+              </div>
+            
+              <div class="stat-item">
+                <label>Working Hours</label>
+                <span class="countup" data-target="225">0</span>
+              </div>
+            
+              <div class="stat-item">
+                <label>Online Support</label>
+                <span class="countup" data-target="115">0</span>
+              </div>
+            
+              <div class="stat-item">
+                <label>Happy Customers</label>
+                <span class="countup" data-target="272">0</span>
+              </div>
+            </div>
+           <!-- MY SUCCESS WORK -->
+           <section class="success-work" id="success-work">
+            <h2>My Success Work</h2>
+            <div class="project-gallery">
+              <img src="images/image1.1.jpg" alt="Project 1" />
+              <img src="images/image2.1.avif" alt="Project 2" />
+              <img src="images/image3.1.avif" alt="Project 3" />
+              <img src="images/image4.1.avif" alt="Project 4" />
+              <img src="images/image5.1.webp" alt="Project 5" />
+              <img src="images/image6.1.avif" alt="Project 6" />
+            </div>
+          </section>
+          
+          <section class="contact-section">
+            <div class="contact-container">
+              <!-- Contact Form -->
+              <section class="contact-section">
+                <div class="contact-container">
+                  <!-- Contact Form -->
+                  <div class="contact-left">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                      <input type="text" placeholder="Your Name" required />
+                      <input type="email" placeholder="Your Email" required />
+                      <textarea placeholder="Your Message" rows="5" required></textarea>
+                      <button type="submit">Send Message</button>
+                    </form>
+                  </div>
+              
+          
+              <!-- Google Map -->
+              <div class="contact-right">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.887593832708!2d144.96305761589865!3d-37.81621874205038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f14f7c91%3A0x5055fcefe0f5b1d0!2sMelbourne!5e0!3m2!1sen!2sau!4v1588170103082!5m2!1sen!2sau"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </section>
+          
+          <footer class="site-footer">
+            <div class="footer-content">
+              <p>&copy; 2025 UI Portfolio. All rights reserved.</p>
+            </div>
+          </footer>
+          
+</main>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
