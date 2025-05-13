@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+
+    /* Back Arrow Styling */
+    .back-link {
+      display: inline-block;
+      color: #22c55e;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 20px;
+      padding: 10px;
+      background: #222;
+      border-radius: 8px;
+    }
+    .back-link:hover {
+      background: #333;
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: #1f1f1f;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #22c55e;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    /* Portfolio Section Styling */
+    .portfolio-section {
+      padding: 50px 20px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .portfolio-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      margin: 10px;
+      width: calc(33.33% - 40px);
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .portfolio-card h3 {
+      color: #22c55e;
+      margin-top: 10px;
+    }
+
+    .portfolio-card p {
+      color: #ddd;
+    }
+
+    /* Media Queries for Mobile */
+    @media (max-width: 768px) {
+      .portfolio-card {
+        width: calc(50% - 40px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back Link -->
+  <a href="javascript:history.back()" class="back-link">← Back to Previous Page</a>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Explore my projects and accomplishments in web and mobile development.</p>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <!-- Project 1 -->
+    <div class="portfolio-card">
+        <img src="images/ecommerce.jpg"alt="John Watson" />
+      <h3>Project One: E-commerce Website</h3>
+      <p>An e-commerce website built with React and Node.js. It features a user-friendly interface, real-time updates, and a secure checkout process.</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-card">
+        <img src="images/mobile.png" alt="John Watson" />
+      <h3>Project Two: Mobile App</h3>
+      <p>A cross-platform mobile app created with React Native. It integrates GPS tracking, push notifications, and a smooth UI for seamless user experience.</p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-card">
+        <img src="images/blogger.png" alt="John Watson" />
+      <h3>Project Three: Blogging Platform</h3>
+      <p>A full-stack blogging platform that allows users to post, comment, and share articles. Built with Django and PostgreSQL, focusing on security and performance.</p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="portfolio-card">
+        <img src="images/chat.jpg" alt="John Watson" />
+      <h3>Project Four: Real-time Chat App</h3>
+      <p>A real-time chat application built with Node.js and Socket.io. It supports instant messaging, group chats, and user authentication.</p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="portfolio-card">
+        <img src="images/finance.jpg" alt="John Watson" />
+      <h3>Project Five: Personal Finance Tracker</h3>
+      <p>A personal finance tracker built using React and Firebase. Users can track their spending, set budgets, and visualize financial data with charts.</p>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="portfolio-card">
+        <img src="images/task.jpg" alt="John Watson" />
+      <h3>Project Six: Task Management App</h3>
+      <p>A task management application with drag-and-drop functionality and calendar integration. Built with Vue.js and Firebase for real-time synchronization.</p>
+    </div>
+  </section>
+
+</body>
+</html>

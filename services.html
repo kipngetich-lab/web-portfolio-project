@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .back-arrow {
+      display: inline-block;
+      margin: 20px;
+      color: #22c55e;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .back-arrow:hover {
+      transform: translateX(-5px);
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    header h1 {
+      color: #22c55e;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .service-card {
+      background-color: #1f1f1f;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+    }
+
+    .service-card img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: #22c55e;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-arrow">← Back</a>
+
+  <header>
+    <h1>Our Services</h1>
+    <p>We craft cutting-edge digital solutions to elevate your brand and business online.</p>
+  </header>
+
+  <section class="services" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; padding: 40px;">
+    <div class="service-card" style="background: #1a1a1a; border-radius: 10px; padding: 20px; text-align: center;">
+      <i class="fas fa-code" style="font-size: 3rem; color: #22c55e;"></i>
+      <h3>Web Development</h3>
+      <p>Responsive, fast, and beautiful websites built with modern technologies like React, HTML5, and CSS3.</p>
+    </div>
+  
+    <div class="service-card" style="background: #1a1a1a; border-radius: 10px; padding: 20px; text-align: center;">
+      <i class="fas fa-mobile-alt" style="font-size: 3rem; color: #22c55e;"></i>
+      <h3>Mobile Apps</h3>
+      <p>Custom iOS and Android apps using React Native, designed for performance and usability.</p>
+    </div>
+  
+    <div class="service-card" style="background: #1a1a1a; border-radius: 10px; padding: 20px; text-align: center;">
+      <i class="fas fa-search" style="font-size: 3rem; color: #22c55e;"></i>
+      <h3>SEO Optimization</h3>
+      <p>Improve your visibility on search engines with our expert SEO strategies and content enhancements.</p>
+    </div>
+  
+    <div class="service-card" style="background: #1a1a1a; border-radius: 10px; padding: 20px; text-align: center;">
+      <i class="fas fa-paint-brush" style="font-size: 3rem; color: #22c55e;"></i>
+      <h3>Branding & Design</h3>
+      <p>Unique and memorable branding with stunning UI/UX design to reflect your business personality.</p>
+    </div>
+  </section>
+  
+
+</body>
+</html>
