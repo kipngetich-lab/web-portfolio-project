@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .back-arrow {
+      margin: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #22c55e;
+      font-size: 1.2rem;
+    }
+
+    .back-arrow:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1f1f1f;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #22c55e;
+    }
+
+    .testimonial-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .testimonial-card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-name {
+      color: #22c55e;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-arrow">← Back</a>
+
+  <header id="testimonial">
+    <h1>🌟 What Our Clients Say</h1>
+    <p>Real feedback from happy clients around the world.</p>
+  </header>
+
+  <section class="testimonial-section">
+    <div class="testimonial-card">
+      <img src="images/client1.jpg" alt="Client1" class="testimonial-img">
+      <div class="testimonial-name">Alex M.</div>
+      <p class="testimonial-quote">"Outstanding service! The team understood our needs and delivered beyond expectations."</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="images/client2.jpg" alt="Client2" class="testimonial-img">
+      <div class="testimonial-name">brian J.</div>
+      <p class="testimonial-quote">"The quality of work and communication were top-notch. Highly recommended!"</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="images/client3.png" alt="Client3" class="testimonial-img">
+      <div class="testimonial-name">Sophie L.</div>
+      <p class="testimonial-quote">"They brought our vision to life with creativity and technical skill."</p>
+    </div>
+  </section>
+
+</body>
+</html>
