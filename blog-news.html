@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech News</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #22c55e;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #22c55e;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin: 20px;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .news-section {
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 20px;
+    }
+
+    .news-content h3 {
+      margin-top: 0;
+      color: #22c55e;
+    }
+
+    .read-more {
+      color: #22c55e;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    .article-details {
+      display: none;
+      padding: 20px;
+      background: #1a1a1a;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back Link -->
+  <a href="javascript:history.back()" class="back-link">← Back</a>
+
+  <header id="blog-news">
+    <h1>📰 Latest in Tech News</h1>
+    <p>Stay informed with the newest trends, tools, and breakthroughs in technology.</p>
+  </header>
+
+  <section class="news-section">
+    <!-- News 1 -->
+    <div class="news-card">
+      <img src="images/news1.jpg" alt="AI News">
+      <div class="news-content">
+        <h3>AI Revolution 2025</h3>
+        <p>Explore how generative AI is transforming software development this year.</p>
+        <span class="read-more" onclick="toggleArticle('article1')">Read More →</span>
+        <div class="article-details" id="article1">
+          <p>Generative AI is redefining the boundaries of what's possible in software development. From smart code suggestions to entire system generation, developers are gaining powerful new tools.</p>
+          <p>This shift allows companies to build faster, iterate quicker, and personalize user experiences like never before. The future is bright, and it's powered by machine learning.</p>
+          <p>In this article, we explore how GPT models, Copilot, and other AI assistants are changing the role of engineers—and how you can stay ahead.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News 2 -->
+    <div class="news-card">
+      <img src="images/news2.webp" alt="JavaScript Update">
+      <div class="news-content">
+        <h3>ECMAScript 2025: What’s New?</h3>
+        <p>New syntax and features that JavaScript developers can start using today.</p>
+        <span class="read-more" onclick="toggleArticle('article2')">Read More →</span>
+        <div class="article-details" id="article2">
+          <p>ECMAScript 2025 introduces features like partial application, pipeline operators, and `function.do`. These updates aim to improve readability, efficiency, and modern JavaScript tooling.</p>
+          <p>These features empower developers to write cleaner and more expressive code, particularly in functional programming and modern frontend frameworks.</p>
+          <p>Start experimenting now with supported environments and polyfills to stay ahead of the curve.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News 3 -->
+    <div class="news-card">
+      <img src="images/news3.webp" alt="Tech Event">
+      <div class="news-content">
+        <h3>Top Dev Conferences 2025</h3>
+        <p>Here are the top events and keynotes to watch for innovation and networking.</p>
+        <span class="read-more" onclick="toggleArticle('article3')">Read More →</span>
+        <div class="article-details" id="article3">
+          <p>Tech conferences in 2025 are going hybrid, combining live and virtual experiences. Major events like Google I/O, React Summit, and Microsoft Build will focus on AI, cloud, and developer experience.</p>
+          <p>These events offer great chances to connect, share, and learn. Whether you're a full-stack developer or a designer, these conferences will provide deep dives into new tools and workflows.</p>
+          <p>Plan your travel, prep your demos, and get ready to network at the biggest dev events of the year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleArticle(id) {
+      const article = document.getElementById(id);
+      article.style.display = article.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

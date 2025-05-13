@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #1a1a1a;
+      color: white;
+    }
+
+    .blog-hero {
+      padding: 60px 20px 40px;
+      background: #222;
+      text-align: center;
+    }
+
+    .back-arrow {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #22c55e;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px 20px;
+      justify-content: center;
+      background: #1a1a1a;
+    }
+
+    .blog-card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .read-more {
+      color: #22c55e;
+      text-decoration: none;
+    }
+
+    .blog-cta {
+      text-align: center;
+      padding: 40px 20px;
+      background: #222;
+    }
+
+    .blog-cta form {
+      margin-top: 20px;
+    }
+
+    .blog-cta input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .btn.green {
+      background: #22c55e;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+    }
+
+    .btn.green:hover {
+      background: #1e9b4d;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="blog" class="blog-hero">
+    <a href="index.html" class="back-arrow">← Back</a>
+    <h1>Insights & Inspiration</h1>
+    <p>Explore my thoughts, projects, and tips on tech, design, and productivity.</p>
+  </section>
+
+  <section class="blog-posts">
+    <div class="blog-card">
+      <img src="images/image4.1.avif" alt="Tech Blog" />
+      <div class="blog-content">
+        <h3>Mastering React in 30 Days</h3>
+        <p>Learn how I built dynamic web apps using React, JSX, and hooks in a month.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/image5.1.webp" alt="Design Blog" />
+      <div class="blog-content">
+        <h3>Top UI Trends in 2025</h3>
+        <p>Stay ahead with this year's cleanest and most impactful design patterns.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="images/image2.1.avif" alt="Coding Blog" />
+      <div class="blog-content">
+        <h3>Behind the Code</h3>
+        <p>A deep dive into the backend logic of my latest app using Node.js and Firebase.</p>
+        <a href="#" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-cta">
+    <h2>Want More Insights?</h2>
+    <p>Subscribe for exclusive content and behind-the-scenes updates.</p>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn green">Subscribe Now</button>
+    </form>
+  </section>
+
+</body>
+</html>

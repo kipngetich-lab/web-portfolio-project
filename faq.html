@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .back-arrow {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      color: #22c55e;
+      font-size: 1.2rem;
+    }
+
+    .back-arrow:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #1f1f1f;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 2px solid #22c55e;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #22c55e;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq {
+      background: #222;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      background: #2a2a2a;
+      font-weight: bold;
+      color: #22c55e;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid #333;
+      background: #1a1a1a;
+      color: #ccc;
+    }
+
+    .faq.active .faq-answer {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-arrow">← Back</a>
+
+  <header id="faq">
+    <h1>❓ Frequently Asked Questions</h1>
+    <p>Your questions answered with clarity and precision.</p>
+  </header>
+
+  <section class="faq-section">
+    <div class="faq">
+      <div class="faq-question">What services do you offer?</div>
+      <div class="faq-answer">We provide web development, mobile apps, UI/UX design, and digital marketing solutions tailored to your needs.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How long does a typical project take?</div>
+      <div class="faq-answer">Most projects take between 2–6 weeks, depending on complexity and client feedback speed.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">Do you offer ongoing support?</div>
+      <div class="faq-answer">Yes! We offer maintenance and support packages to keep your digital products running smoothly.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">How can I get a quote?</div>
+      <div class="faq-answer">Simply contact us through our website or email with your project idea. We’ll get back to you with a custom quote.</div>
+    </div>
+  </section>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+      faq.querySelector('.faq-question').addEventListener('click', () => {
+        faq.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
